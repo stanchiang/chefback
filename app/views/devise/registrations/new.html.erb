@@ -8,9 +8,15 @@
 
   <div><%= f.label :password %><br />
   <%= f.password_field :password %></div>
+<<<<<<< HEAD
   <%= f.hidden_field :stripe_card_token %>
 
   <%= render "/payform" %>
+=======
+
+  <div><%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %></div>
+>>>>>>> c56ea2630fc8ac933650255f399e6e1d074a01a2
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>

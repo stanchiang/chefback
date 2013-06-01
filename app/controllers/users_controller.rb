@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 	before_filter :authenticate_user!
+<<<<<<< HEAD
 	def index
 	end
 
@@ -33,6 +34,13 @@ class UsersController < ApplicationController
 		@user = user.find(params[:id])
 		@user.destroy
 		redirect_to users_url
+=======
+
+	def index
+	end
+
+	def show
+>>>>>>> c56ea2630fc8ac933650255f399e6e1d074a01a2
 	end
 
 end

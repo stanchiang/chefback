@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130601224702) do
+=======
+ActiveRecord::Schema.define(:version => 20130601181227) do
+>>>>>>> c56ea2630fc8ac933650255f399e6e1d074a01a2
 
   create_table "Inventories", :force => true do |t|
     t.integer "user_id"
@@ -20,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20130601224702) do
     t.integer "warning"
   end
 
+<<<<<<< HEAD
   create_table "foods", :force => true do |t|
     t.string  "user_id"
     t.string  "ingredient_name"
@@ -27,6 +32,8 @@ ActiveRecord::Schema.define(:version => 20130601224702) do
     t.integer "price"
   end
 
+=======
+>>>>>>> c56ea2630fc8ac933650255f399e6e1d074a01a2
   create_table "ingredients", :force => true do |t|
     t.integer "user_id"
     t.integer "food_id"
@@ -34,6 +41,16 @@ ActiveRecord::Schema.define(:version => 20130601224702) do
     t.integer "quantity_used"
   end
 
+<<<<<<< HEAD
+=======
+  create_table "recipe", :force => true do |t|
+    t.string  "user_id"
+    t.string  "ingredient_name"
+    t.string  "name"
+    t.integer "price"
+  end
+
+>>>>>>> c56ea2630fc8ac933650255f399e6e1d074a01a2
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
@@ -47,7 +64,10 @@ ActiveRecord::Schema.define(:version => 20130601224702) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+<<<<<<< HEAD
     t.text     "stripe_card_token"
+=======
+>>>>>>> c56ea2630fc8ac933650255f399e6e1d074a01a2
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
