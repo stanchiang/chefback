@@ -53,4 +53,3 @@ ActiveRecord::Schema.define(:version => 20130601220654) do
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end
->>>>>>> 56eba5d93140baeb5726758ce771a9d7c01f5917

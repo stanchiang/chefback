@@ -4,7 +4,7 @@ jQuery ->
 
 subscription =
   setupForm: ->
-    $('#submit_payment').submit ->
+    $('#new_user').submit ->
       #$('input[type=submit]').attr('disabled', true)
       subscription.processCard()
       false
